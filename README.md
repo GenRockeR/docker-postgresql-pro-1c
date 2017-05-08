@@ -15,7 +15,7 @@ docker volume create --name=pg-data
 docker volume create --name=pg-run
 docker run --name postgresql --restart always \
  -v pg-data:/var/lib/postgresql -v pg-run:/run/postgresql \
- -p 5432:5432 -d rsyuzyov/postgresql-pro-1c:9.6-2`
+ -p 5432:5432 -d rsyuzyov/postgresql-pro-1c
 ```
 
 # Дополнительно
