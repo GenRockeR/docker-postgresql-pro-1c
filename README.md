@@ -1,7 +1,7 @@
 # Dockerfile для сборки PostgreSQL, адаптированного для 1С.
 
 Сделано на основе замечательных [sameersbn/docker-postgresql](https://github.com/sameersbn/docker-postgresql)
-и дистрибутивов от [Postgres Professional](https://postgrespro.ru/products/1c_build)
+и [Postgres Professional](https://postgrespro.ru/products/1c_build)
 
 Отличия от родительского проекта:
 - базовый образ ubuntu заменен с trusty на xenial
