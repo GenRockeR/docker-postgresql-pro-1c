@@ -1,4 +1,5 @@
 # Dockerfile для сборки PostgreSQL, адаптированного для 1С.
+https://hub.docker.com/r/rsyuzyov/postgresql-pro-1c/
 
 Сделано на основе замечательных [sameersbn/docker-postgresql](https://github.com/sameersbn/docker-postgresql)
 и [Postgres Professional](https://postgrespro.ru/products/1c_build)
@@ -18,10 +19,17 @@ docker run --name postgresql --restart always \
  -p 5432:5432 -d rsyuzyov/postgresql-pro-1c
 ```
 
-# Дополнительно
+# Ссылки
 
 Подробное описание, а также инструкции на все случаи жизни смотрим в [sameersbn/docker-postgresql](https://github.com/sameersbn/docker-postgresql)
 
-В учебных целях очень рекомендуется посмотреть [сюда](https://github.com/VanessaDockers/pgsteroids).
+В учебных целях, в том числе для ознакомления с инструментарием управления и обслуживания postgres очень рекомендуется посмотреть [сюда](https://github.com/VanessaDockers/pgsteroids).
 
+Другие докер-файлы PostgreSQL для 1С:
+- https://github.com/temrdm/1c-postgres
+- https://github.com/winsento/1c-postgres
+
+Докер-файлы сервера 1С:
+- https://github.com/temrdm/1c_server
+- https://github.com/andruccho/1c_server
 
