@@ -16,7 +16,7 @@ docker volume create --name pg-data
 docker volume create --name pg-run
 docker run --name postgresql --restart always \
  -v pg-data:/var/lib/postgresql -v pg-run:/run/postgresql \
- --net host -p 5432:5432 \
+ --net host \
  -d rsyuzyov/postgresql-pro-1c
 ```
 
@@ -26,7 +26,7 @@ docker volume create --name pg-data
 docker volume create --name pg-run
 docker run --name postgresql --restart always `
  -v pg-data:/var/lib/postgresql -v pg-run:/run/postgresql `
- --net host -p 5432:5432 `
+ --net host `
  -d rsyuzyov/postgresql-pro-1c
 ```
 
