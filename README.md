@@ -1,13 +1,15 @@
 # Dockerfile для сборки PostgreSQL, адаптированного для 1С.
 https://hub.docker.com/r/rsyuzyov/postgresql-pro-1c/
 
+Версия PG: 9.6.2 (для 1С 8.3.9 и выше)
+
 Сделано на основе замечательных [sameersbn/docker-postgresql](https://github.com/sameersbn/docker-postgresql)
 и [Postgres Professional](https://postgrespro.ru/products/1c_build)
 
 Отличия от родительского проекта:
 - базовый образ ubuntu заменен с trusty на xenial
 - локаль ru_RU.UTF-8
-- версия PG берется из 1c.postgrespro.ru
+- PG берется из 1c.postgrespro.ru
 
 # Использование
 Под linux (bash):
