@@ -10,13 +10,24 @@ https://hub.docker.com/r/rsyuzyov/postgresql-pro-1c/
 - версия PG берется из 1c.postgrespro.ru
 
 # Использование
-
+Под linux (bash):
 ```bash
-docker volume create --name=pg-data
-docker volume create --name=pg-run
+docker volume create --name pg-data
+docker volume create --name pg-run
 docker run --name postgresql --restart always \
  -v pg-data:/var/lib/postgresql -v pg-run:/run/postgresql \
- -p 5432:5432 -d rsyuzyov/postgresql-pro-1c
+ --net host -p 5432:5432 \
+ -d rsyuzyov/postgresql-pro-1c
+```
+
+Под windows (powershell):
+```bash
+docker volume create --name pg-data
+docker volume create --name pg-run
+docker run --name postgresql --restart always `
+ -v pg-data:/var/lib/postgresql -v pg-run:/run/postgresql `
+ --net host -p 5432:5432 `
+ -d rsyuzyov/postgresql-pro-1c
 ```
 
 # Ссылки
