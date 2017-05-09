@@ -30,8 +30,16 @@ docker run --name postgresql --restart always `
  -d rsyuzyov/postgresql-pro-1c
 ```
 
-# Ссылки
+Подключение:
+- сервер: сервер или ip, на котором запущен Docker
+- порт: 5432
+- пользователь: postgresql
+- пароль: пустой
 
+# Дополнительно
+При использовании `--net host` по скорости работы практически не отличается от варианта установки на хост.
+
+# Ссылки
 Подробное описание, а также инструкции на все случаи жизни смотрим в [sameersbn/docker-postgresql](https://github.com/sameersbn/docker-postgresql)
 
 В учебных целях, в том числе для ознакомления с инструментарием управления и обслуживания postgres очень рекомендуется посмотреть [сюда](https://github.com/VanessaDockers/pgsteroids).
