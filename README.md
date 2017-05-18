@@ -19,7 +19,7 @@ docker volume create --name pg-run
 docker run --name postgresql --restart always \
  -v pg-data:/var/lib/postgresql -v pg-run:/run/postgresql \
  --net host \
- -d rsyuzyov/postgresql-pro-1c
+ -d rsyuzyov/docker-postgresql-pro-1c
 ```
 
 Под windows (powershell):
@@ -29,7 +29,7 @@ docker volume create --name pg-run
 docker run --name postgresql --restart always `
  -v pg-data:/var/lib/postgresql -v pg-run:/run/postgresql `
  --net host `
- -d rsyuzyov/postgresql-pro-1c
+ -d rsyuzyov/docker-postgresql-pro-1c
 ```
 
 Подключение:
