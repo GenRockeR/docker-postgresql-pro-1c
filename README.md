@@ -1,5 +1,5 @@
 # Dockerfile для сборки PostgreSQL, адаптированного для 1С.
-https://hub.docker.com/r/rsyuzyov/postgresql-pro-1c/
+https://hub.docker.com/r/rsyuzyov/docker-postgresql-pro-1c/
 
 Версия PG: 9.6.2 (для 1С 8.3.9 и выше)
 
