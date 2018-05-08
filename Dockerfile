@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y sudo locales wget  \
 ENV LANG ru_RU.UTF-8
 
 RUN wget --quiet -O - http://1c.postgrespro.ru/keys/GPG-KEY-POSTGRESPRO-1C | apt-key add - \
- && echo 'deb http://1c.postgrespro.ru/deb/ xenial main' > /etc/apt/sources.list.d/postgrespro-1c.list \
+ && echo 'deb http://1c.postgrespro.ru/archive/2018_03_02/deb/ xenial main' > /etc/apt/sources.list.d/postgrespro-1c.list \
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y acl \
       postgresql-pro-1c-${PG_VERSION} postgresql-client-pro-1c-${PG_VERSION} postgresql-contrib-pro-1c-${PG_VERSION} \
