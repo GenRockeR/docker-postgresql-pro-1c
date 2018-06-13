@@ -1,4 +1,6 @@
 # Changelog
+**9.6-9-1C**
+- postgresql: change to 9.6.9 from Postgres Professional
 
 **9.6-2-1C**
 - postgresql: change to 9.6.2 from Postgres Professional
