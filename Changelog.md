@@ -1,5 +1,8 @@
 # Changelog
 
+**10.4-1C**
+- postgresql: change to 10.4 from Postgres Professional
+
 **9.6-2-1C**
 - postgresql: change to 9.6.2 from Postgres Professional
 - locale: change to ru_RU.UTF-8
