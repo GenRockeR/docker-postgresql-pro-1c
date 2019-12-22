@@ -35,7 +35,7 @@ docker run --name postgresql --restart always `
 Подключение:
 - сервер: сервер или ip, на котором запущен Docker
 - порт: 5432
-- пользователь: postgresql
+- пользователь: postgres
 - пароль: пустой
 
 # Дополнительно
